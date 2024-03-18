@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans ', sans-serif;
+}
+
+:root{
+    --navColor:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Work Sans ', sans-serif;;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between   ;
+    align-items: center;
+    height: 15rem;
+    padding: 0 12.8rem;
+    font-size: 2rem;
+    background-image: url(images/welcome-banner.jpg);
+    color: var(--navColor);
+    opacity: 7;
+}
+
+.navbar-lists{
+    display: flex;
+    gap: 7rem;
+    list-style: none;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--navColor);
+    transition: all 0.3s;
+    font-family: system-ui;
+}
+
+.navbar-brand{
+    display: inline-block;
+    color: var(--navColor);
+    font-family: 'Rufina', serif;
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding: 45px 0px;
+    text-transform: uppercase;
+}
+
