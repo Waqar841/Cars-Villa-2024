@@ -8,12 +8,22 @@
 
 :root{
     --navColor:#fff;
+    --navHover: #337ab7;
 }
 
 html{
     font-size: 62.5%;
     font-family: 'Work Sans ', sans-serif;;
     scroll-behavior: smooth;
+}
+
+.section{
+    padding: 9rem 0;
+}
+
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
 }
 
 li{
@@ -24,6 +34,19 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.Welcome-main{
+    background: url(images/welcome-banner.jpg);
+}
+
+/* =================
+header section
+================= */
+
 .header{
     display: flex;
     justify-content:space-between   ;
@@ -31,7 +54,6 @@ a{
     height: 15rem;
     padding: 0 12.8rem;
     font-size: 2rem;
-    background-image: url(images/welcome-banner.jpg);
     color: var(--navColor);
     opacity: 7;
 }
@@ -54,14 +76,40 @@ a{
     font-family: system-ui;
 }
 
+.nav-link:hover,
+.nav-link:active{
+    color: var(--navHover);
+}
+
 .navbar-brand{
     display: inline-block;
     color: var(--navColor);
     font-family: 'Rufina', serif;
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     letter-spacing: 3px;
     font-weight: 700;
     padding: 45px 0px;
     text-transform: uppercase;
 }
 
+
+/* =================
+main-body section
+================= */
+
+.main-section{
+
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5rem;
+}
+
+.main-heading{
+    color: var(--navColor);
+    margin-bottom: 4.5rem;
+}
