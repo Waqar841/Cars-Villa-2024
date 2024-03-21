@@ -9,6 +9,8 @@
 :root{
     --navColor:#fff;
     --navHover: #337ab7;
+    --btnColor: #4e4ffa;
+    --btnColor2: #3a3af3;
 }
 
 html{
@@ -42,14 +44,49 @@ h1{
     display: block  ;
 }
 
+.btn{
+    background: var(--btnColor);
+    padding: 3rem 9rem;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    background: var(--btnColor2);
+}
+
+.grid{
+    display: grid;
+    gap: 3rem;
+}
+
+.grid-two-column{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-column{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-column{
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .Welcome-main{
     position: relative;
     background: url(images/welcome-banner.jpg) no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 200%;
     z-index: 1;
     height: 100vh;
     padding: 1rem 13rem;
+    background-size: 130%;
+    background-position-y: top;
 }
 
 .Welcome-main::before{
@@ -118,15 +155,12 @@ header section
 main-body section
 ================= */
 
-.main-section{
-    /* padding: 37rem */
-}
 
 .main-body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 7rem;
     margin-top: 16.4rem;
     text-align: center;
 }
@@ -143,4 +177,18 @@ main-body section
 .main-heading{
     font-weight: 800;
     color: var(--navColor); 
+}
+
+/* =================
+Form section
+================= */
+
+.form-section{
+    
+}
+
+.serach-btn{
+    width: 1rem !important;
+    height: 1rem !important;
+    padding: 1rem 1rem !important;
 }
